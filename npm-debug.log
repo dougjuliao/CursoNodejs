@@ -1,0 +1,53 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose readDependencies using package.json deps
+6 verbose install where, deps [ 'C:\\xampp\\htdocs\\cursoNodejs', [ 'mongoose' ] ]
+7 info preinstall aulas-nodejs@1.0.0
+8 warn package.json zipper@0.3.0 'repositories' (plural) Not supported. Please pick one as the 'repository' field
+9 warn package.json zipper@0.3.0 specifying dependencies as array is deprecated
+10 verbose readDependencies using package.json deps
+11 verbose already installed skipping mongoose@* C:\xampp\htdocs\cursoNodejs
+12 silly resolved []
+13 info build C:\xampp\htdocs\cursoNodejs
+14 verbose linkStuff [ false, false, false, 'C:\\xampp\\htdocs' ]
+15 info linkStuff aulas-nodejs@1.0.0
+16 verbose linkBins aulas-nodejs@1.0.0
+17 verbose linkMans aulas-nodejs@1.0.0
+18 verbose rebuildBundles aulas-nodejs@1.0.0
+19 verbose rebuildBundles [ 'mongoose', 'zipper' ]
+20 verbose rebuild bundle C:\xampp\htdocs\cursoNodejs\node_modules\zipper
+21 info build C:\xampp\htdocs\cursoNodejs\node_modules\zipper
+22 info preinstall zipper@0.3.0
+23 verbose linkStuff [ false,
+23 verbose linkStuff   false,
+23 verbose linkStuff   false,
+23 verbose linkStuff   'C:\\xampp\\htdocs\\cursoNodejs\\node_modules' ]
+24 info linkStuff zipper@0.3.0
+25 verbose linkBins zipper@0.3.0
+26 verbose linkMans zipper@0.3.0
+27 verbose rebuildBundles zipper@0.3.0
+28 info install zipper@0.3.0
+29 verbose unsafe-perm in lifecycle true
+30 info zipper@0.3.0 Failed to exec install script
+31 error zipper@0.3.0 install: `make all`
+31 error Exit status 1
+32 error Failed at the zipper@0.3.0 install script.
+32 error This is most likely a problem with the zipper package,
+32 error not with npm itself.
+32 error Tell the author that this fails on your system:
+32 error     make all
+32 error You can get their info via:
+32 error     npm owner ls zipper
+32 error There is likely additional logging output above.
+33 error System Windows_NT 6.1.7601
+34 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+35 error cwd C:\xampp\htdocs\cursoNodejs
+36 error node -v v0.10.26
+37 error npm -v 1.4.3
+38 error code ELIFECYCLE
+39 verbose exit [ 1, true ]

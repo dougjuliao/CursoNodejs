@@ -1,0 +1,187 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'zipper' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose cache add [ 'zipper', null ]
+6 verbose cache add name=undefined spec="zipper" args=["zipper",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'zipper',
+7 verbose parsed url   path: 'zipper',
+7 verbose parsed url   href: 'zipper' }
+8 silly lockFile 77ee7816-zipper zipper
+9 verbose lock zipper C:\Users\Douglas.Juliao\AppData\Roaming\npm-cache\77ee7816-zipper.lock
+10 silly lockFile 77ee7816-zipper zipper
+11 silly lockFile 77ee7816-zipper zipper
+12 verbose addNamed [ 'zipper', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile 56c6414f-zipper zipper@
+15 verbose lock zipper@ C:\Users\Douglas.Juliao\AppData\Roaming\npm-cache\56c6414f-zipper.lock
+16 silly addNameRange { name: 'zipper', range: '*', hasData: false }
+17 verbose url raw zipper
+18 verbose url resolving [ 'https://registry.npmjs.org/', './zipper' ]
+19 verbose url resolved https://registry.npmjs.org/zipper
+20 info trying registry request attempt 1 at 11:55:09
+21 verbose etag "8AFIATRX9HF0M9HP98ND60TIO"
+22 http GET https://registry.npmjs.org/zipper
+23 http 304 https://registry.npmjs.org/zipper
+24 silly registry.get cb [ 304,
+24 silly registry.get   { date: 'Tue, 30 Sep 2014 14:55:09 GMT',
+24 silly registry.get     server: 'Apache',
+24 silly registry.get     via: '1.1 varnish',
+24 silly registry.get     'last-modified': 'Tue, 30 Sep 2014 14:55:09 GMT',
+24 silly registry.get     'cache-control': 'max-age=60',
+24 silly registry.get     etag: '"8AFIATRX9HF0M9HP98ND60TIO"',
+24 silly registry.get     'x-served-by': 'cache-atl6231-ATL',
+24 silly registry.get     'x-cache': 'HIT',
+24 silly registry.get     'x-cache-hits': '1',
+24 silly registry.get     'x-timer': 'S1412088909.657976,VS0,VE108',
+24 silly registry.get     vary: 'Accept',
+24 silly registry.get     'content-length': '0',
+24 silly registry.get     'keep-alive': 'timeout=10, max=50',
+24 silly registry.get     connection: 'Keep-Alive' } ]
+25 verbose etag zipper from cache
+26 silly addNameRange number 2 { name: 'zipper', range: '*', hasData: true }
+27 silly addNameRange versions [ 'zipper',
+27 silly addNameRange   [ '0.0.1', '0.0.2', '0.1.0', '0.1.1', '0.1.2', '0.2.0', '0.3.0' ] ]
+28 verbose addNamed [ 'zipper', '0.3.0' ]
+29 verbose addNamed [ '0.3.0', '0.3.0' ]
+30 silly lockFile fb4739d8-zipper-0-3-0 zipper@0.3.0
+31 verbose lock zipper@0.3.0 C:\Users\Douglas.Juliao\AppData\Roaming\npm-cache\fb4739d8-zipper-0-3-0.lock
+32 silly lockFile fb4739d8-zipper-0-3-0 zipper@0.3.0
+33 silly lockFile fb4739d8-zipper-0-3-0 zipper@0.3.0
+34 silly lockFile 56c6414f-zipper zipper@
+35 silly lockFile 56c6414f-zipper zipper@
+36 silly resolved [ { name: 'zipper',
+36 silly resolved     version: '0.3.0',
+36 silly resolved     main: './lib/index.js',
+36 silly resolved     description: 'Insanely simple zipfile creator for node.js',
+36 silly resolved     keywords: [ 'zip', 'compress', 'archive', 'libzip' ],
+36 silly resolved     url: 'http://github.com/rubenv/zipper',
+36 silly resolved     repositories: [ [Object] ],
+36 silly resolved     author: { name: 'Ruben Vermeersch', email: 'ruben@savanne.be' },
+36 silly resolved     contributors: [],
+36 silly resolved     licenses: [ [Object] ],
+36 silly resolved     dependencies: {},
+36 silly resolved     directories: { examples: 'examples', src: 'src' },
+36 silly resolved     engines: { node: '>=0.6.0 <0.12' },
+36 silly resolved     scripts: { install: 'make all', test: 'grunt test' },
+36 silly resolved     devDependencies:
+36 silly resolved      { grunt: '~0.4.1',
+36 silly resolved        'grunt-contrib-jshint': '~0.2.0',
+36 silly resolved        'grunt-mkdir': '~0.1.1',
+36 silly resolved        'grunt-contrib-clean': '~0.4.0',
+36 silly resolved        'grunt-release': '~0.3.1',
+36 silly resolved        'grunt-contrib-watch': '~0.3.1',
+36 silly resolved        'grunt-mocha-cli': '~1.0.1',
+36 silly resolved        'coffee-script': '~1.6.1' },
+36 silly resolved     readme: '  Insanely simple zipfile creator for node.js.\n\n  [![Build Status](https://travis-ci.org/rubenv/zipper.png?branch=master)](https://travis-ci.org/rubenv/zipper)\n\n  Developed by Flow Pilots: http://www.flowpilots.com/\n\n# Usage\n\n    zipper = require(\'zipper\').Zipper;\n\n    var zipfile = new zipper(\'/path/to/my/zipfile.zip\');\n    zipfile.addFile(\'myfile.txt\', \'/path/to/myfile.txt\', function (err) {\n        if (err) throw err;\n        // Do stuff\n    });\n\n  The zip file will be created if it does not exist already.\n\n## Installation\n\n  You can install the latest tag via npm:\n  \n    $ npm install zipper\n\n  Be sure to install `libzip-devel` (Fedora etc.) or `libzip-dev` (Ubuntu etc.)\n  before installing on Linux.\n\n## Credits\n\n  Inspired by node-zipfile (written by Dane Springmeyer).\n',
+36 silly resolved     readmeFilename: 'README.md',
+36 silly resolved     repository: { type: 'git', url: 'git://github.com/rubenv/zipper.git' },
+36 silly resolved     bugs: { url: 'https://github.com/rubenv/zipper/issues' },
+36 silly resolved     homepage: 'https://github.com/rubenv/zipper',
+36 silly resolved     _id: 'zipper@0.3.0',
+36 silly resolved     _from: 'zipper@' } ]
+37 info install zipper@0.3.0 into c:\xampp\htdocs\CursoNodejs
+38 info installOne zipper@0.3.0
+39 info c:\xampp\htdocs\CursoNodejs\node_modules\zipper unbuild
+40 verbose tar unpack C:\Users\Douglas.Juliao\AppData\Roaming\npm-cache\zipper\0.3.0\package.tgz
+41 silly lockFile 79c007d7--CursoNodejs-node-modules-zipper tar://c:\xampp\htdocs\CursoNodejs\node_modules\zipper
+42 verbose lock tar://c:\xampp\htdocs\CursoNodejs\node_modules\zipper C:\Users\Douglas.Juliao\AppData\Roaming\npm-cache\79c007d7--CursoNodejs-node-modules-zipper.lock
+43 silly lockFile 17f4cdc5-m-cache-zipper-0-3-0-package-tgz tar://C:\Users\Douglas.Juliao\AppData\Roaming\npm-cache\zipper\0.3.0\package.tgz
+44 verbose lock tar://C:\Users\Douglas.Juliao\AppData\Roaming\npm-cache\zipper\0.3.0\package.tgz C:\Users\Douglas.Juliao\AppData\Roaming\npm-cache\17f4cdc5-m-cache-zipper-0-3-0-package-tgz.lock
+45 silly gunzTarPerm modes [ '755', '644' ]
+46 silly gunzTarPerm extractEntry package.json
+47 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+48 silly gunzTarPerm extractEntry .npmignore
+49 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+50 silly gunzTarPerm extractEntry README.md
+51 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+52 silly gunzTarPerm extractEntry binding.gyp
+53 silly gunzTarPerm modified mode [ 'binding.gyp', 438, 420 ]
+54 silly gunzTarPerm extractEntry LICENSE.txt
+55 silly gunzTarPerm modified mode [ 'LICENSE.txt', 438, 420 ]
+56 silly gunzTarPerm extractEntry Makefile
+57 silly gunzTarPerm modified mode [ 'Makefile', 438, 420 ]
+58 silly gunzTarPerm extractEntry .jshintrc
+59 silly gunzTarPerm modified mode [ '.jshintrc', 438, 420 ]
+60 silly gunzTarPerm extractEntry .travis.yml
+61 silly gunzTarPerm modified mode [ '.travis.yml', 438, 420 ]
+62 silly gunzTarPerm extractEntry deps/build-libzip.sh
+63 silly gunzTarPerm modified mode [ 'deps/build-libzip.sh', 438, 420 ]
+64 silly gunzTarPerm extractEntry deps/libzip-0.10.tar.bz2
+65 silly gunzTarPerm modified mode [ 'deps/libzip-0.10.tar.bz2', 438, 420 ]
+66 silly gunzTarPerm extractEntry examples/test.js
+67 silly gunzTarPerm modified mode [ 'examples/test.js', 438, 420 ]
+68 silly gunzTarPerm extractEntry lib/index.js
+69 silly gunzTarPerm modified mode [ 'lib/index.js', 438, 420 ]
+70 silly gunzTarPerm extractEntry lib/zipper.js
+71 silly gunzTarPerm modified mode [ 'lib/zipper.js', 438, 420 ]
+72 silly gunzTarPerm extractEntry Gruntfile.coffee
+73 silly gunzTarPerm modified mode [ 'Gruntfile.coffee', 438, 420 ]
+74 silly gunzTarPerm extractEntry src/_zipper.cc
+75 silly gunzTarPerm modified mode [ 'src/_zipper.cc', 438, 420 ]
+76 silly gunzTarPerm extractEntry src/zipper.cpp
+77 silly gunzTarPerm modified mode [ 'src/zipper.cpp', 438, 420 ]
+78 silly gunzTarPerm extractEntry src/zipper.hpp
+79 silly gunzTarPerm modified mode [ 'src/zipper.hpp', 438, 420 ]
+80 silly gunzTarPerm extractEntry test/addfile_test.coffee
+81 silly gunzTarPerm modified mode [ 'test/addfile_test.coffee', 438, 420 ]
+82 silly gunzTarPerm extractEntry test/common.coffee
+83 silly gunzTarPerm modified mode [ 'test/common.coffee', 438, 420 ]
+84 silly gunzTarPerm extractEntry test/sample-files/test.txt
+85 silly gunzTarPerm modified mode [ 'test/sample-files/test.txt', 438, 420 ]
+86 silly lockFile 79c007d7--CursoNodejs-node-modules-zipper tar://c:\xampp\htdocs\CursoNodejs\node_modules\zipper
+87 silly lockFile 79c007d7--CursoNodejs-node-modules-zipper tar://c:\xampp\htdocs\CursoNodejs\node_modules\zipper
+88 silly lockFile 17f4cdc5-m-cache-zipper-0-3-0-package-tgz tar://C:\Users\Douglas.Juliao\AppData\Roaming\npm-cache\zipper\0.3.0\package.tgz
+89 silly lockFile 17f4cdc5-m-cache-zipper-0-3-0-package-tgz tar://C:\Users\Douglas.Juliao\AppData\Roaming\npm-cache\zipper\0.3.0\package.tgz
+90 info preinstall zipper@0.3.0
+91 verbose readDependencies using package.json deps
+92 verbose readDependencies using package.json deps
+93 silly resolved []
+94 verbose about to build c:\xampp\htdocs\CursoNodejs\node_modules\zipper
+95 info build c:\xampp\htdocs\CursoNodejs\node_modules\zipper
+96 verbose linkStuff [ false,
+96 verbose linkStuff   false,
+96 verbose linkStuff   false,
+96 verbose linkStuff   'c:\\xampp\\htdocs\\CursoNodejs\\node_modules' ]
+97 info linkStuff zipper@0.3.0
+98 verbose linkBins zipper@0.3.0
+99 verbose linkMans zipper@0.3.0
+100 verbose rebuildBundles zipper@0.3.0
+101 info install zipper@0.3.0
+102 verbose unsafe-perm in lifecycle true
+103 info zipper@0.3.0 Failed to exec install script
+104 info c:\xampp\htdocs\CursoNodejs\node_modules\zipper unbuild
+105 info preuninstall zipper@0.3.0
+106 info uninstall zipper@0.3.0
+107 verbose true,c:\xampp\htdocs\CursoNodejs\node_modules,c:\xampp\htdocs\CursoNodejs\node_modules unbuild zipper@0.3.0
+108 info postuninstall zipper@0.3.0
+109 error zipper@0.3.0 install: `make all`
+109 error Exit status 1
+110 error Failed at the zipper@0.3.0 install script.
+110 error This is most likely a problem with the zipper package,
+110 error not with npm itself.
+110 error Tell the author that this fails on your system:
+110 error     make all
+110 error You can get their info via:
+110 error     npm owner ls zipper
+110 error There is likely additional logging output above.
+111 error System Windows_NT 6.1.7601
+112 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "zipper"
+113 error cwd c:\xampp\htdocs\CursoNodejs\modulos
+114 error node -v v0.10.26
+115 error npm -v 1.4.3
+116 error code ELIFECYCLE
+117 verbose exit [ 1, true ]
